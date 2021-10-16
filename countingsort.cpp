@@ -16,8 +16,7 @@ std::vector<uint16_t> countingsort(std::vector<uint16_t> input) {
 
     std::vector<uint16_t> sorted(input.size());
     for (int i = input.size()-1; i >= 0; i--) {
-        tmp[input[i]]--;
-        sorted[tmp[input[i]]] = input[i];
+        sorted[--tmp[input[i]]] = input[i];
     }
 
     return sorted;
