@@ -3,7 +3,7 @@
 #include <vector>
 #include "countingsort.h"
 
-std::vector<uint16_t> countingsort(std::vector<uint16_t> input) {
+std::vector<uint16_t> countingsort(const std::vector<uint16_t>& input) {
     const int tmpSize = *std::max_element(begin(input), end(input)) + 1;
 
     std::vector<uint16_t> tmp(tmpSize, 0);

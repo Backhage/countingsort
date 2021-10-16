@@ -11,4 +11,4 @@
  * This implementation ensures only positive integers (including zero) and
  * puts a limit on k by only accepting elements of type uint16_t (max 65535).
 **/
-std::vector<uint16_t> countingsort(std::vector<uint16_t> input);
+std::vector<uint16_t> countingsort(const std::vector<uint16_t>& input);
