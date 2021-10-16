@@ -6,7 +6,7 @@
 std::vector<uint16_t> countingsort(const std::vector<uint16_t>& input) {
     const int tmpSize = *std::max_element(begin(input), end(input)) + 1;
 
-    std::vector<uint16_t> tmp(tmpSize, 0);
+    std::vector<std::size_t> tmp(tmpSize, 0);
     for (int i = 0; i < input.size(); i++) {
         tmp[input[i]]++;
     }
